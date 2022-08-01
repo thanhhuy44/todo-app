@@ -15,7 +15,7 @@ function Header() {
 
   const handleAddJob = (value) => {
     dispatch(
-      fsetTodosList({
+      setTodosList({
         name: value,
         isDone: false,
       })
