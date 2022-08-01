@@ -14,8 +14,12 @@ function Header() {
   const todos = useSelector((state) => state.todos.todos);
 
   const handleAddJob = (value) => {
-    console.log(value);
-    dispatch(setTodosList(value));
+    dispatch(
+      fsetTodosList({
+        name: value,
+        isDone: false,
+      })
+    );
     setInputValue("");
     inputRef.current.focus();
   };
@@ -30,6 +34,7 @@ function Header() {
           className={cx("input")}
           value={inputValue}
           onChange={(e) => setInputValue(e.target.value)}
+          placeholder="Add something..."
         />
         <button
           onClick={() => handleAddJob(inputValue)}
