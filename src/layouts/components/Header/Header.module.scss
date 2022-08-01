@@ -1,0 +1,33 @@
+.container {
+  min-height: var(--header-height);
+  margin: 0 8px;
+}
+.title {
+  font-size: 3.6rem;
+  padding: 12px 0;
+  text-align: center;
+}
+
+.input-section {
+  display: flex;
+  border-radius: 4px;
+  overflow: hidden;
+  background-color: var(--text-primary);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+.input {
+  flex: 1;
+  font-size: 2rem;
+  font-weight: 600;
+  padding: 12px;
+}
+
+.input-btn {
+  font-size: 1.6rem;
+  font-weight: 600;
+  padding: 0 16px;
+  cursor: pointer;
+}
