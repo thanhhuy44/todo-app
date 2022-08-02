@@ -1,5 +1,5 @@
 .container {
-  padding: calc(var(--header-height) + 20px) 8px 0 8px;
+  padding: calc(var(--header-height) + 20px) 8px 180px 8px;
 }
 
 // @media (max-width: 739px) {
@@ -7,3 +7,45 @@
 //     margin-top: calc(var(--header-height) + 20px);
 //   }
 // }
+
+.todos {
+  display: block;
+  min-height: 100px;
+}
+.todo-later,
+.todo-completed {
+  margin-top: 16px;
+}
+
+.title {
+  font-size: 2rem;
+}
+
+.completed {
+  text-decoration: line-through;
+  font-style: italic;
+  color: rgba($color: #fff, $alpha: 0.6);
+}
+
+.controller {
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  color: #fff;
+  opacity: 1;
+  font-weight: 600;
+  span {
+    margin-right: 8px;
+  }
+}
+
+.reset-todos {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.reset-btn {
+  font-size: 1.6rem;
+}

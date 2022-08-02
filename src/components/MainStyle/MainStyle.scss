@@ -11,6 +11,10 @@
   --text-link-color: #6e8ffb;
 }
 
+::-webkit-scrollbar {
+  display: none;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -34,4 +38,10 @@ input,
   display: block;
   outline: none;
   border: none;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+  color: inherit;
 }

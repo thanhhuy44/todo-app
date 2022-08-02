@@ -1,5 +1,6 @@
 import MainStyle from "./components/MainStyle/MainStyle";
 import MainLayout from "./layouts/MainLayout/MainLayout";
+import "./App.css";
 
 function App() {
   return (

@@ -1,9 +1,11 @@
 .button {
+  font-family: inherit;
   padding: 0 12px;
   border-radius: 4px;
   cursor: pointer;
   background-color: transparent;
   opacity: 0.6;
+  color: inherit;
   &:hover {
     opacity: 1;
   }
