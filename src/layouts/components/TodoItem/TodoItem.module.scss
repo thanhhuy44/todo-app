@@ -1,0 +1,21 @@
+.item {
+  display: flex;
+  align-items: center;
+  margin-top: 8px;
+  border-radius: 4px;
+  font-size: 1.6rem;
+  font-weight: 400;
+  background-color: var(--secondary-color);
+  overflow: hidden;
+}
+
+.todo {
+  flex: 1;
+  height: 100%;
+  padding: 12px 12px;
+}
+
+.todo-btn {
+  display: block;
+  font-size: 3.6rem;
+}

@@ -1,0 +1,9 @@
+.container {
+  padding: calc(var(--header-height) + 20px) 8px 0 8px;
+}
+
+// @media (max-width: 739px) {
+//   .container {
+//     margin-top: calc(var(--header-height) + 20px);
+//   }
+// }

@@ -1,0 +1,22 @@
+.button {
+  padding: 0 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  background-color: transparent;
+  opacity: 0.6;
+  &:hover {
+    opacity: 1;
+  }
+}
+
+.complete {
+  color: rgb(1, 214, 1);
+}
+
+.pause {
+  color: yellow;
+}
+
+.delete {
+  color: red;
+}

@@ -11,8 +11,11 @@ const todosSlice = createSlice({
     setTodosList: (state, action) => {
       state.todos = [...state.todos, action.payload];
     },
+    deleteTodoItem: (state, action) => {
+      state.todos = state.todos.filter((todo) => todo.id !== action.payload);
+    },
   },
 });
 
-export const { setTodosList } = todosSlice.actions;
+export const { setTodosList, deleteTodoItem } = todosSlice.actions;
 export default todosSlice.reducer;
