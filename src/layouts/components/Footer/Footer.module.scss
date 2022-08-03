@@ -36,6 +36,7 @@
 @media (max-width: 739px) {
   .container {
     display: block;
-    position: relative;
+    position: absolute;
+    bottom: 0;
   }
 }
