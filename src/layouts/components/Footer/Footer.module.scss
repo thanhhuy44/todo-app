@@ -21,13 +21,21 @@
   margin-left: 8px;
 }
 
-@media (max-width: 739px) {
+@media (max-width: 1024px) {
   .container {
     width: 100%;
     display: block;
     text-align: center;
+    left: 0;
   }
   .info {
     margin-top: 12px;
+  }
+}
+
+@media (max-height: 500px) {
+  .container {
+    display: block;
+    position: relative;
   }
 }

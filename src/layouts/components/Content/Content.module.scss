@@ -2,11 +2,18 @@
   padding: calc(var(--header-height) + 20px) 8px 180px 8px;
 }
 
-// @media (max-width: 739px) {
-//   .container {
-//     margin-top: calc(var(--header-height) + 20px);
-//   }
-// }
+@media (max-width: 1024px) {
+  .container {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (min-width: 740px) and (max-width: 1023px) {
+  .container {
+    padding: calc(var(--header-height) + 20px) var(--tablet-padding) 180px;
+  }
+}
 
 .todos {
   display: block;
