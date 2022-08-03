@@ -14,7 +14,6 @@ function Clock() {
     return () => {
       setTime(date.toLocaleTimeString());
       setDay(date.toLocaleDateString());
-      console.log(time);
       clearInterval(interval);
     };
   }, [date]);
