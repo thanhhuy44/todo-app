@@ -19,8 +19,8 @@ function Clock() {
   }, [date]);
   return (
     <div className={cx("container")}>
-      <p className={cx("date")}>{day}</p>
-      <p className={cx("time")}>{time}</p>
+      <p className="text-4xl font-bold">{day}</p>
+      <p className="mt-2 text-2xl">{time}</p>
     </div>
   );
 }

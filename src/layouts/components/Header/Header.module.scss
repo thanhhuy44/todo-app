@@ -1,23 +1,16 @@
+
+
 .container {
   min-height: var(--header-height);
   padding: 0 8px 20px 8px;
   background-color: var(--primary-color);
-  position: fixed;
+  // position: fixed;
   width: var(--main-width);
   top: 0;
   z-index: 999;
 }
-.title {
-  font-size: 3.6rem;
-  padding: 12px 0;
-  text-align: center;
-}
 
 .input-section {
-  display: flex;
-  border-radius: 4px;
-  overflow: hidden;
-  background-color: var(--text-primary);
   box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
     rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
 }
@@ -29,20 +22,10 @@
 }
 
 .input {
-  flex: 1;
-  font-size: 2rem;
-  font-weight: 600;
-  padding: 12px;
   min-width: 200px;
 }
 
-.input-btn {
-  font-size: 3.6rem;
-  font-weight: 600;
-  padding: 0 16px;
-  background-color: transparent;
-  color: var(--text-secondary);
-}
+
 
 @media (max-width: 1024px) {
   .container {

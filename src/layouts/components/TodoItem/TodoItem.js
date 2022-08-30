@@ -28,7 +28,12 @@ function TodoItem({ data, className }) {
   };
 
   return (
-    <div className={cx("item", className)}>
+    <div
+      className={
+        cx("item", className) +
+        " flex items-center mt-2 rounded text-base overflow-hidden"
+      }
+    >
       <p className={cx("todo")}>{data.name}</p>
       {data.isDone === false && (
         <Button

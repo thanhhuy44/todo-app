@@ -43,7 +43,7 @@ function Content() {
             todo.isPause === false && <TodoItem key={index} data={todo} />
         )}
       </div>
-      <div className={cx("todo-later")}>
+      <div className="mt-4 text-sm">
         <div>
           <Button
             className={cx("controller")}
@@ -64,7 +64,7 @@ function Content() {
               todo.isPause === true && <TodoItem key={todo.id} data={todo} />
           )}
       </div>
-      <div className={cx("todo-completed")}>
+      <div className="mt-4 text-sm">
         <div>
           <Button
             className={cx("controller")}
@@ -91,7 +91,7 @@ function Content() {
           )}
       </div>
       {todos.length !== 0 && (
-        <div className={cx("reset-todos")}>
+        <div className="mt-5 flex items-center justify-center ">
           <Button className={cx("reset-btn")} onClick={handleResetTodos}>
             Reset Progress
           </Button>

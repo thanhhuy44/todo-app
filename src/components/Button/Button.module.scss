@@ -1,11 +1,6 @@
 .button {
   font-family: inherit;
-  padding: 0 12px;
-  border-radius: 4px;
-  cursor: pointer;
-  background-color: transparent;
-  opacity: 0.6;
-  color: inherit;
+  @apply px-3 rounded cursor-pointer bg-transparent opacity-60 text-inherit text-4xl;
   &:hover {
     opacity: 1;
   }

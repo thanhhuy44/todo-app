@@ -19,10 +19,7 @@
   display: block;
   min-height: 100px;
 }
-.todo-later,
-.todo-completed {
-  margin-top: 16px;
-}
+
 
 .title {
   font-size: 2rem;
@@ -35,24 +32,14 @@
 }
 
 .controller {
-  font-size: 2rem;
-  display: flex;
-  align-items: center;
-  color: #fff;
-  opacity: 1;
-  font-weight: 600;
+  @apply text-xl flex items-center text-white opacity-100 font-semibold;  
   span {
     margin-right: 8px;
   }
 }
 
-.reset-todos {
-  margin-top: 20px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
+
 
 .reset-btn {
-  font-size: 1.6rem;
+  font-size: 16px;
 }

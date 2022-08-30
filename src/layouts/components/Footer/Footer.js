@@ -12,11 +12,11 @@ const cx = classNames.bind(styles);
 
 function Footer() {
   return (
-    <div className={cx("container")}>
-      <div className={cx("clock")}>
+    <div className={cx("container") + " fixed bottom-0 px-2 py-3 flex "}>
+      <div className="flex-1">
         <Clock />
       </div>
-      <div className={cx("info")}>
+      <div className="flex-1 text-base ">
         <p>Name: Thanh Huy</p>
         <p>
           <a href="mailto:thhuy28062001@gmail.com">
@@ -27,7 +27,7 @@ function Footer() {
         <p>
           <span>Socials: </span>
           <a
-            className={cx("social-link")}
+            className="ml-2"
             href="https://github.com/thanhhuy44"
             target="blank"
           >

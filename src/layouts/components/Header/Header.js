@@ -43,13 +43,13 @@ function Header() {
   };
 
   return (
-    <div className={cx("container")}>
-      <h1 className={cx("title")}>Todo App</h1>
-      <div className={cx("input-section")}>
+    <div className={cx("container") + " fixed"}>
+      <h1 className="text-4xl py-3 text-center font-bold">Todo App</h1>
+      <div className=" flex rounded overflow-hidden bg-white text-textprimary text-lg">
         <input
           ref={inputRef}
           type="text"
-          className={cx("input")}
+          className={cx("input") + " flex-1 font-semibold p-3"}
           onChange={handleOnChangeInput}
           value={inputValue}
           placeholder="Add something..."
@@ -57,7 +57,7 @@ function Header() {
         <Button
           disable={!isValidInput}
           onClick={() => handleAddJob(inputValue)}
-          className={cx("input-btn")}
+          className="text-lg font-semibold px-4 bg-transparent text-textprimary"
         >
           <FontAwesomeIcon icon={faAdd} />
         </Button>
