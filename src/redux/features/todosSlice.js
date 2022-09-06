@@ -2,12 +2,17 @@ import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
   todos: JSON.parse(localStorage.getItem("todos")) || [],
+  isLogin: false,
 };
 
 const todosSlice = createSlice({
   name: "todos",
   initialState,
   reducers: {
+    setIsLogin: (state, action) => {
+      state.isLogin = action.payload;
+      localStorage.setItem("isLogin", action.payload);
+    },
     setTodosList: (state, action) => {
       state.todos = [...state.todos, action.payload];
       localStorage.setItem("todos", JSON.stringify(state.todos));
@@ -39,6 +44,7 @@ const todosSlice = createSlice({
 });
 
 export const {
+  setIsLogin,
   setTodosList,
   deleteTodoItem,
   setTodoLater,

@@ -2,13 +2,15 @@ import { useState, useRef } from "react";
 import { useSelector, useDispatch } from "react-redux/es/exports";
 import { setTodosList } from "../../../redux/features/todosSlice";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faAdd } from "@fortawesome/free-solid-svg-icons";
+import { faAdd, faUser, faSignOut } from "@fortawesome/free-solid-svg-icons";
 import uniqid from "uniqid";
 
 import Button from "../../../components/Button";
 
 import classNames from "classnames/bind";
 import styles from "./Header.module.scss";
+import { Link } from "react-router-dom";
+import { setIsLogin } from "../../../redux/features/todosSlice";
 
 const cx = classNames.bind(styles);
 
@@ -44,7 +46,18 @@ function Header() {
 
   return (
     <div className={cx("container") + " fixed"}>
-      <h1 className="text-4xl py-3 text-center font-bold">Todo App</h1>
+      <div className="flex items-center justify-between">
+        <h1 className="relative text-4xl py-3 text-center font-bold">
+          Todo App
+        </h1>
+        <Link
+          to="/login"
+          onClick={() => dispatch(setIsLogin(false))}
+          className="p-4 cursor-pointer text-base"
+        >
+          <FontAwesomeIcon icon={faSignOut} />
+        </Link>
+      </div>
       <div className=" flex rounded overflow-hidden bg-white text-textprimary text-lg">
         <input
           ref={inputRef}
